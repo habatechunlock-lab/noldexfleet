@@ -33,7 +33,7 @@
 import {initializeApp} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,sendPasswordResetEmail,onAuthStateChanged,signOut,updateProfile} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import {getFirestore,doc,setDoc,getDoc} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-const config={apiKey:"AIzaSyDvOkWfKmjBEEF6WZlO21ninEaz3UNNrV4",authDomain:"noldexflotte-sarl.firebaseapp.com",projectId:"noldexflotte-sarl",storageBucket:"noldexflotte-sarl.firebasestorage.app",messagingSenderId:"478103615533",appId:"1:478103615533:web:5bb885eec39396cec0a0a4"};
+const config={apiKey:"AIzaSyAHdux8xyibR8LNsf4rM5XZSFvvgx7sui4",authDomain:"noldexfleet-e0fb5.firebaseapp.com",projectId:"noldexfleet-e0fb5",storageBucket:"noldexfleet-e0fb5.firebasestorage.app",messagingSenderId:"363726595863",appId:"1:363726595863:web:5bb885eec39396cec0a0a4"};
 const app=initializeApp(config),auth=getAuth(app),db=getFirestore(app);
 const $=id=>document.getElementById(id); const msg=(id,text,ok=false)=>{$(id).textContent=text;$(id).className='message '+(ok?'ok':'err')};
 window.showTab=(tab)=>{['login','register'].forEach(x=>{$(x+'Panel').classList.toggle('active',x===tab);$('tab'+x[0].toUpperCase()+x.slice(1)).classList.toggle('active',x===tab)})};
